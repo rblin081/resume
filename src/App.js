@@ -23,9 +23,13 @@ class App extends Component {
             >
               <i className="fab fa-github fa-5x" />
             </a>
-            <div className="icon_ctn">
+            <a
+              className="icon_ctn"
+              href="tel:+13478240173"
+              title="1.347.824.0173"
+            >
               <i className="fas fa-phone fa-5x" />
-            </div>
+            </a>
           </div>
           <div>
             <div className="headshot">
