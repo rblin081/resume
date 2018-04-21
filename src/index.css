@@ -1,0 +1,271 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+  font-size: 13px;
+  font-weight: 400;
+  width:101vw;
+}
+
+/*
+section.personal{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://i.imgur.com/SBhniqO.jpg);
+  background-size:cover
+}
+*/
+
+section.personal{
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://i.imgur.com/SBhniqO.jpg);
+  background-size:cover;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  border: 1px solid black;
+}
+
+section.personal div.personal_icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #282a2b;
+    height: 100%;
+    width: 160px;
+    border: 1px solid black;
+}
+
+section.personal div.personal_icons .icon_ctn{
+  color: black;
+  border: 4px solid white;
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+  min-height: 85px;
+  min-width: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  color: white;
+}
+
+section.personal div.personal_icons .icon_ctn:hover{
+  opacity: .5;
+}
+
+section.personal .headshot{
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-shrink: 2;
+}
+
+section.personal .headshot .img{
+  background-image: url(https://i.imgur.com/k6SNkx6.jpg);
+  height: 250px;
+  width: 250px;
+  border: 9px solid white;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: calc(100% - 20px) calc(30%);
+}
+
+section.personal .title{
+  width: 100%;
+  font-size: 24px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 10px 0;
+}
+
+section.personal .title span{
+  letter-spacing: 2px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+section.personal .resume_link_ctn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+section.personal .resume_link{
+  background-color: #282a2b;
+  color: white;
+  letter-spacing: 2px;
+  width: 200px;
+  height: 30px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 28px;
+  display: block;
+  text-align: center;
+}
+
+section.personal .resume_link:hover{
+  background: black;
+}
+
+
+.resume_link svg, .resume_link i{
+  margin-right: 10px;
+}
+
+
+section.about_me {
+  background: linear-gradient(#75332E, #6B1715, #75332E);
+  height: 400px;
+  width: 101vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+section.about_me .icon_ctn{
+  cursor: pointer;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.about_me .icon_ctn:hover{
+  background: #000;
+}
+
+section.about_me i, section.about_me svg{
+  color: white;
+}
+
+section.about_me div.container{
+  height: 90%;
+  width: 80%;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.about_me div.title_ctn{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+  color: white;
+}
+
+section.about_me span.title{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section.about_me span.duration{
+  font-style: italic;
+  font-size: 14px;
+}
+
+div.about_me_description_ctn{
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+  grid-column-gap: 40px;
+  width: 100%;
+  height: 90%;
+  grid-row-gap: 20px;
+}
+
+div.description_entry{
+  font-size: 24px;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 13px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 2px 16px 0px;
+  background: #d0cccc;
+}
+
+div.description_entry:hover div.title{
+  display:none;
+}
+
+div.description_entry div.description {
+  display: none;
+  padding: 10px;
+  font-size: 14px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+div.description_entry:hover div.description{
+  display: block;
+}
+
+div.description_entry div.entry_title{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+div.description_entry div.entry_description{
+  text-align: left;
+}
+
+section.skills {
+  background: white;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section.skills .icon_ctn{
+  cursor: pointer;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.skills .icon_ctn:hover{
+  background: #000;
+}
+
+section.skills i, section.skills svg{
+  color: white;
+}
+
+section.skills div.container{
+  height: 90%;
+  width: 80%;
+  background-color: white;
+  margin-top: 5px;
+}
+
+section.footer{
+  background-color: #282a2b;
+  height: 130px;
+  width: 100%;
+}
