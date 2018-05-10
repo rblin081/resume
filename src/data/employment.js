@@ -18,11 +18,7 @@ module.exports = [
       },
       {
         title: 'Guest Access',
-        description: 'Transform current guest access system to allow combinations of guest user types to access platform. Securely design a single sign on platform that allows users to log in and be immeditalte forwarded to platform of corresponding guest type.'
-      },
-      {
-        title: 'Automated MP4 Creation',
-        description: 'Automate creation of event content into MP4 File. Assure that creation process covers all manner of event acquisition and content combinations.'
+        description: 'Transform current guest access system to allow combinations of guest user types to access platform. Securely design a single sign on platform that allows users to log in and be immediately forwarded to platform of corresponding guest type.'
       },
       {
         title: 'Automated MP4 Creation',
